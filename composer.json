@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Phing\\Task\\Ext\\": "src/"
+      "Phing\\Task\\Ext\\Amazon\\": ""
     }
   },
   "extra": {

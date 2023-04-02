@@ -1,4 +1,5 @@
 <?php
+
 /**
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -22,7 +23,6 @@ namespace Phing\Task\Ext\Amazon;
 use Aws\Result;
 use Aws\S3\S3Client;
 use Phing\Exception\BuildException;
-use Phing\Task\Ext\Amazon;
 
 /**
  * Abstract Service_Amazon_S3 class.
@@ -33,7 +33,7 @@ use Phing\Task\Ext\Amazon;
  * @package phing.tasks.ext
  * @author  Andrei Serdeliuc <andrei@serdeliuc.ro>
  */
-abstract class S3 extends Amazon
+abstract class S3 extends Base
 {
     /**
      * Services_Amazon_S3 client

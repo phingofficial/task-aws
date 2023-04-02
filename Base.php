@@ -1,4 +1,5 @@
 <?php
+
 /**
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -17,7 +18,7 @@
  * <http://phing.info>.
  */
 
-namespace Phing\Task\Ext;
+namespace Phing\Task\Ext\Amazon;
 
 use Phing\Exception\BuildException;
 use Phing\Task;
@@ -33,7 +34,7 @@ use Phing\Task;
  * @author   Andrei Serdeliuc <andrei@serdeliuc.ro>
  * @abstract
  */
-abstract class Amazon extends Task
+abstract class Base extends Task
 {
     /**
      * Collection of set options

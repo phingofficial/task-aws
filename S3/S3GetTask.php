@@ -1,4 +1,5 @@
 <?php
+
 /**
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -113,7 +114,7 @@ class S3GetTask extends S3
 
         // Use the object name as the target if the current target is a directory
         if (is_dir($target)) {
-            $target = rtrim($target, '/') . '/' . $this->getObject();
+            $target = rtrim($target, '/') . 'S3GetTask.php/' . $this->getObject();
         }
 
         $client = $this->getClientInstance();
